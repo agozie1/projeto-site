@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Agozie Nunes Emhelu" />
+    <meta name="author" content="Jonas Tavares Lewis" />
+    <meta name="author" content="Gabriel Mendes da Silva" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="site.css">
+    
+</head>
+
+<header>
+    <a href="index.html"><img src="logo.png" alt="Logo do site" id="logo"></a>
+    <a href="index.html" id="voltar" style="text-decoration: none; color:black;"><h1>Voltar</h1></a>
+</header>
+
+<body id="formulario">
+    <div id="paginas" style="height: 16cm;">
+        <h2>Cadastro</h2>
+        <form name="dados" id="dados" action="" method="post">
+            <div class="campos">
+                <label for="nome">Nome Completo</label>
+                <input type="text"  value="" id="nome"autofocus required>
+            </div>
+
+            <hr>
+            <h3>Endereço</h3>
+            <div class="campos">
+        
+                <div>
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" required placeholder="ex: Av. Vasconcelos">
+                </div>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" required placeholder="ex: 1234">
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" required placeholder="ex: Mooca">
+                </div>
+                
+            </div>
+            <div class="campos">
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input list="uf" id="estados" class="lista" required placeholder="ex: Selecione o estado">
+                    <datalist id="uf">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </datalist>
+                </div>
+                
+            </div>
+            <hr>
+            <h3>Contato:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="telefone">Telefone</label>
+                    
+                    
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="telefone" required placeholder="ex: 00-1234-5678">
+                    
+                </div>
+            </div>
+            <hr>
+            
+            <div>
+                <input type="button" id="inputButton" value="Cadastrar" onclick="window.location.href='cadastro.html'">
+            </div>
+
+            <script>
+            var btn = document.querySelector("#inputButton");
+
+            btn.addEventListener("click", function () {
+
+                var nome = document.querySelector("#nome").value;
+                var rua = document.querySelector("#rua").value;
+                var numero = document.querySelector("#numero").value;
+                var bairro = document.querySelector("#bairro").value;
+                var estados = document.querySelector("#estados").value;
+                var telefone = document.querySelector("#telefone").value;
+                localStorage.setItem('nome', nome);
+                localStorage.setItem('rua', rua);
+                localStorage.setItem('numero', numero);
+                localStorage.setItem('bairro', bairro);
+                localStorage.setItem('estados', estados);
+                localStorage.setItem('telefone', telefone);
+
+            })
+        </script>
+
+        </form>
+    </div>
+
+    <footer>
+        
+        <ul id="devs">
+            <h3 id="hdevs">Desenvolvedores</h3>
+            <li>Agozie Nunes Emhelu</li>
+            <li>Jonas Tavares Lewis</li>
+            <li>Gabriel Mendes da Silva</li>
+        </ul>
+
+        <ul id="contatos">
+            <h3 id="hdevs">Contatos</h3>
+            <li>agozienunesemehelu@gmail.com</li>
+            <li>jonastlewis@gmail.com</li>
+            <li>Gabriel Mendes da Silva</li>
+        </ul>
+    </footer>
+
+</body>
+</html>

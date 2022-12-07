@@ -1,0 +1,213 @@
+
+html{
+    font-family: arial;
+}
+
+body{
+    margin: 0;
+}
+
+/*                                 Header home page                                */
+
+header{
+    display: block;
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    width: auto;
+    min-height: 2cm;
+    padding-top: 1cm;
+}
+
+#menu{
+    position: absolute;
+    float: right;
+    height: 1.5cm;
+    top: 0.7cm;
+    right: 2cm;
+}
+
+#usuario{
+    position: absolute;
+    height: 1cm;
+    float: right;
+    right: 5cm;
+    top: 1cm;
+}
+
+#logo{
+    filter: brightness(0);
+    position: absolute;
+    height: 3cm;
+    top: -0.1cm;
+}
+#txtPesquisa{
+    position: absolute;
+    width: 10cm;
+    height: 25px; 
+    top: 1cm;
+    left: 50%;
+    margin-left: -5cm;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+/*                                 Barra de navegação                              */
+
+nav{
+    border-style: solid;
+    
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    height: 1.5cm;
+    width: auto;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: -5px;
+}
+
+
+
+#home{
+    
+    margin-top: 0cm;
+    width: 100%;
+   
+}
+
+#home a{
+    text-decoration: none;
+    color:black;
+    padding: 0.2cm;
+    
+}
+
+#home a:hover {
+    
+    color: white
+  }
+
+  header img:hover {
+    
+    -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5);
+
+  }
+
+
+
+
+#home h1{
+    margin-top: -0.2cm;
+    padding-bottom: 0.1cm;
+    
+    
+    
+}
+
+/*                                 Últimas Noticias                            */
+   
+#conteudo{
+    padding-top: 1cm;
+    background-color: #D3D3D3;
+    height: 16cm;
+}
+
+#noticias img{
+    
+    height: 5cm;
+    width: 300px;
+    padding-top: 5px;
+    padding-left: 4.5cm;
+    padding-right: 5cm;
+    padding-bottom: 1px;
+    
+    
+  }
+
+#conteudo h1{
+    text-align: center;
+}
+
+/*                                 Rodapé                           */
+
+footer{
+    border: solid 2px;
+    padding-top: 0.3cm;
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    height: 3cm;
+    width: auto;
+    padding-bottom: 0.3cm;
+}
+
+#devs{
+    position: absolute;
+    right: 5cm;
+    margin-top: -0.3cm;
+    
+}
+
+#contatos{
+    float: left;
+    left: 5cm;
+    margin-top: -0.3cm;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/*                                 Padrão das páginas                        */
+
+
+#voltar{
+    position: absolute;
+    left: 50%;
+    margin-top: -0.5cm;
+}
+
+#paginas{
+    padding-top: 1cm;
+    background-color: #D3D3D3;
+    height: 12cm;
+}
+
+#paginas img{
+    position: static;
+    float: right;
+    margin-right: 1cm;
+    height: 7cm;
+    width: 8cm;
+    border: solid 5px;
+    margin-left: 0.5cm;
+}
+
+#paginas h3{
+    padding-top: 0.5cm;
+    margin-top: -0.5cm;
+    text-align: center;
+    
+}
+
+#paginas p{
+    text-align: justify;
+    text-indent: 1cm;
+    margin: 0.5cm;
+}
+
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#formulario div{
+    padding-left: 1cm;
+}
+
+.campos {
+    display: block;
+    margin: 1cm;
+    left: auto;
+    right: auto;
+}
+  

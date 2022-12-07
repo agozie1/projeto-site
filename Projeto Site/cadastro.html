@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+    <link rel="stylesheet" href="site.css">
+   
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Logo do site" id="logo"></a>
+        <a href="index.html" id="voltar" style="text-decoration: none; color:black;"><h1>Voltar</h1></a>
+    </header>
+
+    <div id="paginas" style="height: 20cm;">
+
+        
+        <div id="paginas">
+            <h3 style="font-size: 1cm;">Cadastro</h3>
+            <h4>Nome:</h4>
+            <p id="EscreverNome"></p>
+            <h4>Rua/Número/Bairro:</h4>
+            <p id="EscreverRua"></p>
+            <p id="EscreverNumero"></p>
+            <p id="EscreverBairro"></p>
+            <h4>Estado:</h4>
+            <p id="EscreverEstados"></p>
+            <h4>Telefone:</h4>
+            <p id="EscreverTelefone"></p>
+        </div>
+        <script>
+               
+                var nomee = document.querySelector("#EscreverNome");
+                nomee.textContent =  localStorage.getItem('nome');
+                var ruaa = document.querySelector("#EscreverRua");
+                ruaa.textContent =  localStorage.getItem('rua');
+                var numeroo = document.querySelector("#EscreverNumero");
+                numeroo.textContent =  localStorage.getItem('numero');
+                var bairroo = document.querySelector("#EscreverBairro");
+                bairroo.textContent =  localStorage.getItem('bairro');
+                var estadoss = document.querySelector("#EscreverEstados");
+                estadoss.textContent =  localStorage.getItem('estados');
+                var telefonee = document.querySelector("#EscreverTelefone");
+                telefonee.textContent =  localStorage.getItem('telefone');
+                      
+        </script>
+
+    </div>
+
+    <footer>
+        
+        <ul id="devs">
+            <h3 id="hdevs">Desenvolvedores</h3>
+            <li>Agozie Nunes Emhelu</li>
+            <li>Jonas Tavares Lewis</li>
+            <li>Gabriel Mendes da Silva</li>
+        </ul>
+
+        <ul id="contatos">
+            <h3 id="hdevs">Contatos</h3>
+            <li>agozienunesemehelu@gmail.com</li>
+            <li>jonastlewis@gmail.com</li>
+            <li>Gabriel Mendes da Silva</li>
+        </ul>
+    </footer>
+</body>
+</html>
